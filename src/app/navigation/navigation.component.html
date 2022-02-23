@@ -1,0 +1,44 @@
+<!-- <mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="#">Link 1</a>
+      <a mat-list-item href="#">Link 2</a>
+      <a mat-list-item href="#">Link 3</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>my-pet</span>
+    </mat-toolbar> -->
+    <!-- Add Content Here -->
+  <!-- </mat-sidenav-content>
+</mat-sidenav-container> -->
+<mat-toolbar color="primary" class="navbar">
+  <div>Linh Bit</div>
+  <div>
+    <span><a routerLink="/dashboard">Trang chủ</a></span>
+    <span><a routerLink="/news">Tin tức</a></span>
+    <span><a routerLink="/knowledge">Kiến thức</a></span>
+    <span><a routerLink="/contact">Liên hệ</a></span>
+  </div>
+  <div>
+    <button mat-icon-button class="example-icon">
+      <mat-icon>facebook</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon">
+      <mat-icon>telegram</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>
